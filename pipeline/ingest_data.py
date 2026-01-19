@@ -33,11 +33,11 @@ parse_dates = [
 ]
 
 @click.command()
-@click.option('--pg_user', default='root', help='PostgreSQL user')
-@click.option('--pg_pass', default='root', help='PostgreSQL password')
-@click.option('--pg_host', default='localhost', help='PostgreSQL host')
-@click.option('--pg_port', type=int, default=5432, help='PostgreSQL port')
-@click.option('--pg_db', default='ny_taxi', help='PostgreSQL database')
+@click.option('--pg-user', default='root', help='PostgreSQL user')
+@click.option('--pg-pass', default='root', help='PostgreSQL password')
+@click.option('--pg-host', default='localhost', help='PostgreSQL host')
+@click.option('--pg-port', type=int, default=5432, help='PostgreSQL port')
+@click.option('--pg-db', default='ny_taxi', help='PostgreSQL database')
 @click.option('--table', default='yellow_taxi_data', help='Table name to ingest data into')
 @click.option('--year', type=int, default=2021, help='Year of data')
 @click.option('--month', type=int, default=1, help='Month of data')
